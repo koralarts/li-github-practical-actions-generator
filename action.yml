@@ -9,7 +9,7 @@ branding:
   color: "red"
 inputs:
   email: 
-    description: "The committer's email address (default is '${{ github.actor }}@localhost', which may not be a valid email address for all users)"
+    description: "The committer's email address (default is [Guthub actor's username]@localhost, which may not be a valid email address for all users)"
     required: true
     default: "${{ github.actor }}@localhost"
   name:
