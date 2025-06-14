@@ -1,0 +1,18 @@
+name: "Podcast Generator"
+author: "Karl Castillo"
+description: "Generates a podcast RSS feed"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "git-branch"
+  color: "red"
+input:
+  email: 
+    description: "The commiter's email address"
+    required: true
+    default: ${{ github.actor }}@localhost
+  name:
+    description: "The commiter's name"
+    required: true
+    default: ${{ github.actor }}
