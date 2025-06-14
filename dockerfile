@@ -13,4 +13,6 @@ COPY feed.py /usr/bin/feed.py
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
+RUN ls -l /
+
 ENTRYPOINT ["/entrypoint.sh"]
